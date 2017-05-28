@@ -1,0 +1,7 @@
+output/
+
+*.pyc
+*.d
+*.so
+
+.DS_Store
