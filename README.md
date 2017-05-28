@@ -26,6 +26,8 @@ Small samples of good data taken near the end of the test beam campaign (the fir
 
 ### Near-line analysis code
 
+The analysis code makes use of [ROOT](https://root.cern.ch/), a scientific software framework developed at CERN for high-energy physicists.
+
 To run the near-line analysis on the small samples provided from run 323:
 ```bash
 source run_decoder_correlated.sh 323
@@ -110,6 +112,6 @@ The second script runs the actual near-line analysis `plot_correlated.py`, writt
       - output png files
 
 
-In the end, all three methods for evaluating the sTGC resolution (sTGC track angles, rotated correlation graphs, sTGC position residuals) indicated that one of the main sTGC design specifications, a position resolution of 100 microns or better in each plane, was met by the sTGC prototype.
+In the end, all three methods for evaluating the sTGC resolution (sTGC track angles, rotated correlation graphs, sTGC position residuals) independently indicated that one of the main sTGC design specifications, a position resolution of 100 microns or better in each plane, was indeed met by the sTGC prototype.
 
 
