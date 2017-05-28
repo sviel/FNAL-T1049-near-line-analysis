@@ -19,7 +19,7 @@ The test beam experiment at Fermilab, and a follow-up at CERN, resulted in this 
 
 Raw data from the detectors comes in binary format, so the first step is to decode it.  High-energy physicists typically use ROOT files to store decoded data, especially for large detasets which benefit from built-in compression, but for getting a first implementation as quickly as possible, I chose to use tab-separated txt files. One big advantage of having a human-readable data format in the early stages of a project is the ability to catch simple problems quickly.
 
-Small samples of good data taken near the end of the test beam campaign (the first 256 events from run 323) are available in `data/May20`:
+Small samples of good data taken near the end of the test beam campaign (the first events from run 323) are available in `data/May20`:
 - `trackHitOutfileRun323_sample.txt` contains human-readable pixel track data.  At the beginning of the experiment, software was already available to decode pixel data, form clusters out of adjacent hits, fit tracks from the clusters in different planes, and report the intersection point of the track with each pixel detector plane.
 - `vmm000323_sample.txt` is the sTGC data in the format available at the time of starting the experiment: simply a txt version of the raw data, with dashes inserted between the address of the detector layer (in run 323 the addresses were [18, 19, 25, 29]) and the rest of the data from this address.  "fafafafa" was used to separate between events.  While useful to spot major data acquisition problems, this format needed to be further decoded and analyzed.
 
