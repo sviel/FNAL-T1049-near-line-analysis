@@ -11,7 +11,7 @@ My code performed the "near-line analysis" of sTGC data: it was developed over a
 This is my version of the near-line analysis code at the end of data-taking.  The analysis was then further developed by colleagues into a proper "offline analysis" framework available here (restricted access):  
 svn+ssh://svn.cern.ch/reps/fnaltestbeam14
 
-The project resulted in this publication in NIM A:  
+The test beam experiment at Fermilab, and a follow-up at CERN, resulted in this publication in NIM A:  
 <http://www.sciencedirect.com/science/article/pii/S0168900216001285>
 
 
@@ -36,7 +36,7 @@ The first script compiles and runs `decoder_correlated.C`, a C++ ROOT macro conv
 
 `counter   channel   timing   amplitude   address   ievent`
 
-... where ievent is generally equal to counter + 1, but may not be in case of synchronization problems.  There are 64 channels in each sTGC layer (address).
+... where `ievent` is generally equal to `counter + 1`, but may not be in case of synchronization problems.  There are 64 channels in each sTGC layer (address).
 
 The second script runs the actual near-line analysis `plot_correlated.py`, written in Python ROOT.  The structure of the script is essentially as follows:
 
@@ -110,6 +110,6 @@ The second script runs the actual near-line analysis `plot_correlated.py`, writt
       - output png files
 
 
-In the end, all three methods for evaluating the sTGC resolution (sTGC track angles, rotated correlation graphs, sTGC position residuals) indicated that one of the main sTGC design specifications, a position resolution of 100 microns or better in each plane, was met by the prototype.
+In the end, all three methods for evaluating the sTGC resolution (sTGC track angles, rotated correlation graphs, sTGC position residuals) indicated that one of the main sTGC design specifications, a position resolution of 100 microns or better in each plane, was met by the sTGC prototype.
 
 
